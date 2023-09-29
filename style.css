@@ -451,6 +451,11 @@ section{
         width: 70px;
         height: auto;
     }
+    .air-img2 .right{
+        max-width: 100%;
+        width: 65px;
+        height: auto;
+    }
     .air-img2 .left{
         margin-left: 0.8rem;
     }
