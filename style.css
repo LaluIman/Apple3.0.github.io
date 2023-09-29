@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin-top: 0;    
+    padding: 0;    
+    box-sizing: border-box;   
+     font-family: 'Poppins', sans-serif;    
+     list-style: none;    
+     text-decoration: none;    
+     scroll-behavior: smooth;
+}
+:root{
+    --main-color:#CB6BE8;
+    --text-color:#000000;
+    --bg-color:#ffffff;
+    --big-font:4rem;
+    --h2-font:2.25rem;
+    --p-font:1rem;
+}
+*::selection{
+    background: var(--main-color);
+    color: #fff;
+}
+html{
+    overflow-x: hidden;
+}
+.bg{
+    background-color: #000000;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 170px 1px ;
+    background-color: #0000003d;
+}
+.logo{
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.navbar{
+    display: flex;
+}
+.navbar a {
+    color:white;
+    font-size: 1.1rem;
+    padding:20px 30px;
+    font-weight: 350;
+}
+.navbar :hover{
+    color: rgb(222, 222, 222);
+    transition: .1s;
+    text-decoration: underline;
+}
+#menu-icon{
+   font-size: 2rem; 
+   cursor: pointer;
+   display: none;
+}
+section{
+    padding: 8rem 17%;
+    
+}
+.home{
+    margin-top: 1rem;
+    width: 100%;   
+    min-height: 90vh;    
+    align-items: center;
+}
+.home-video video{
+    margin-left: 3rem;
+    max-width: 200%;
+    width: 800px;
+    height: auto;
+    margin-bottom: 10rem;
+}
+.home-text h1{
+    color: #CB6BE8;
+    font-size: var(--big-font);
+    font-weight: 450;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.home-img img{
+    margin-left: 10rem;
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.btn{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-left: 20rem;
+    padding: 10px 25px;
+    background-color: rgb(62, 62, 62);
+    color: #fff;
+    border-radius:10rem;
+    transition: .5s;
+}
+.btn:hover{
+    box-shadow: 0 0 10rem var(--main-color);
+    color: #ffffff;
+    background-color: #000000;
+}
+.btn-more{
+    margin-left: 23rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+    background-color: rgb(79, 79, 255);
+    border-radius:10rem;
+    padding: 10px 25px;
+}
+.btn-more:hover{
+    background-color: rgb(39, 39, 255);
+}
+.macbook{
+    background-color: #FBFBFB;
+    margin-top: 1rem;
+    width: 100%;   
+    min-height: 90vh;    
+    align-items: center;
+}
+.macbook-text h1{
+    font-weight: 200;
+    margin-top: -2rem;
+    font-size: var(--big-font);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.macbook-text h5{
+    text-align: center;
+    color: red;
+    font-weight: 400;
+}
+.macbook-text h2{
+    margin-top: -4.5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-weight: 400;
+}
+.macbook-img img{
+    max-width: 100%;
+    width: 1500px;
+    height: auto;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.about-mac video{
+    margin-top: 4rem;
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+}
+.about-mac h1{
+    font-size: 1rem;
+    font-weight: 250;
+    text-align: justify;
+}
+.m2{
+    display: grid;    
+    grid-template-columns: repeat(2,1fr);    
+    grid-gap: 1rem;   
+   align-items: center;
+}
+.m2-img img{
+    box-shadow: 0 0 10rem var(--main-color);
+    margin-top: 10rem;
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+}
+.m2-text h3{
+    margin-top: 8rem;
+    font-size: 1.2rem;
+    font-weight: 250;
+}
+.ipad{
+    display: grid;    
+    grid-template-columns: repeat(2,1fr);    
+    grid-gap: 1.5rem;   
+   align-items: center;
+   background-color: #ffffff;
+}
+.ipad-img img{
+    max-width:100%;
+    width:650px;
+    height:auto;
+    margin-bottom: 5rem;
+}
+.ipad-text h5{
+    margin-left: 3rem;
+    color: red;
+    font-weight: 400;
+}
+.ipad-text h1{
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+.ipad-text h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.ipad-text .btn-more{
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+.ipad2-img img{
+    max-width: 100%;
+    width: 900px;
+    height: auto;
+    margin-bottom: -12rem;
+}
+.ipad2-text h2{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.air-video video{
+    max-width: 100%;
+    width: 900px;
+}
+.air-text h1{
+    color: #fff;
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 500;
+}
+.air-text h5{
+    margin-top: -5rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 200;
+    text-align: center;
+}
+.air-img img{
+    margin-left: 160px;
+    margin-top: 7rem;
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+}
+.air-img2 img{
+    margin-left: 140px;
+    margin-top: 7rem;
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+}
+.air-img2 .right{
+    max-width: 100%;
+    width: 280px;
+    height: auto;
+}
+.air-img2 .left{
+    margin-left: 0.8rem;
+}
+.air-img2 h1{
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 400;
+    margin-top: 4rem;
+    text-align: center;
+}
+.air-img h1{
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 400;
+    margin-top: 4rem;
+    text-align: center;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    padding: 10px 0;
+
+}
+.col{
+    width: 25%;
+}
+.col h4{
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 25px;
+    position: relative;
+}
+.col h4::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    left: 0;
+    bottom: -8px;
+    background-color: #fff;
+}
+.col ul li:not(last-child){
+    margin-bottom: 20px;
+}
+.col ul li a{
+    color: #808080;
+    font-size: 1.1rem;
+    display: block;
+    text-transform: capitalize;
+}
+.col ul li a:hover{
+    color: rgb(179, 179, 179);
+    transform: translate(-10px);
+}
+.col .social{
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.col .social a{
+     height: 40px;
+     width: 40px;
+     background-color: #fff;
+     color: rgb(0, 0, 0);
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.5rem;
+     border-radius: 50%;
+
+}
+.col .social a:hover{
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+}
+/* responsive */
+@media(max-width:1560px){
+    header{
+        padding: 15px 50px;
+    }
+}
+@media(max-width:1140px){
+    section{
+        padding: 50px 8%;
+    }
+    #menu-icon{
+        display: initial;
+        color: white;
+    }
+    
+    header .navbar{
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #000000ba;
+        transition: 1s;
+    }
+    header .navbar.active{
+        top: 70px;
+    }
+    .navbar a{
+        padding: 1rem;
+        display: block;
+    }
+}
+@media(max-width:720px){
+    header{
+        padding:30px 20px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    .home .macbook .ipad .airpods{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .home-text h1{
+        font-size: 2.6rem;
+        font-weight: 450;
+    }
+    .home-img img,.macbook-img img{
+        width: 80vw;
+        margin-left: 0.5rem;
+    }
+    .home-video video{
+        width: 80vw;
+        margin-left: 0.5rem;
+    }
+    .btn-more{
+        margin-left: 5rem;
+    }
+    .ipad-text .btn-more{
+        margin-left: 0.5rem;
+    }
+    .about-mac video{
+        width: 80vw;
+        margin-left: -0.4rem;
+    }
+    .m2{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .ipad{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .ipad-text h5{
+        margin-left: 0rem;
+    }
+    .ipad2-img img{
+        margin-bottom: -6.3rem;
+    }
+    .home-video video{
+        width: 80vw;
+        margin-left: -0.4rem;
+    }
+    .air-text h1{
+        font-size: 4rem;
+        font-weight: 300;
+    }
+    .air-text h5{
+        margin-top: 3rem;
+    }
+    .air-img img{
+        width: 60vw;
+        margin-left: 2.5rem;
+    }
+    .air-img h1{
+        font-size: 3rem;
+        margin-left: 0.5rem;
+        font-weight: 300;
+    }
+    .air-img2 img{
+        margin-left: 5rem;
+        max-width: 100%;
+        width: 70px;
+        height: auto;
+    }
+    .air-img2 .left{
+        margin-left: 0.8rem;
+    }
+    .btn{
+        display: none;
+    }
+    section{
+        padding: 100px 7%;
+    }
+  }
+  @media(max-width:575px){
+    .col{
+        width: 100%;
+    }
+  }
