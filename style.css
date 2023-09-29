@@ -346,7 +346,7 @@ section{
 /* responsive */
 @media(max-width:1560px){
     header{
-        padding: 15px 50px;
+        padding: 15px 35px;
     }
 }
 @media(max-width:1140px){
@@ -365,7 +365,7 @@ section{
         right: 0;
         display: flex;
         flex-direction: column;
-        background-color: #000000ba;
+        background: rgba(65, 65, 65, 0.314);
         transition: 1s;
     }
     header .navbar.active{
@@ -374,16 +374,17 @@ section{
     .navbar a{
         padding: 1rem;
         display: block;
+
     }
 }
 @media(max-width:720px){
     header{
-        padding:30px 20px;
+        padding:10px 10px;
         position: fixed;
         top: 0;
         right: 0;
         width: 100%;
-        z-index: 100;
+        z-index: 500;
     }
     .home .macbook .ipad .airpods{
         grid-template-columns: 1fr;
